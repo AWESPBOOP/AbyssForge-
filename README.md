@@ -75,14 +75,32 @@ python benchmarks/run_microbench.py
 ## Build helpers
 
 To compile the project with the default release configuration without fetching any additional
-dependencies, run the lightweight helper script:
+dependencies, run one of the lightweight helper scripts:
 
 ```bash
 scripts/auto_compile.sh
 ```
 
+```powershell
+pwsh -ExecutionPolicy Bypass -File scripts/auto_compile.ps1
+```
+
 Pass `--build-type <Config>` (defaults to `Release`) to switch configurations and/or `--build-dir
-<path>` to emit artifacts somewhere other than the default `build/` directory.
+<path>` (or `-BuildType` / `-BuildDir` in PowerShell) to emit artifacts somewhere other than the
+default `build/` directory.
+
+For a configure → build → test pipeline, invoke the bundled all-in-one helpers:
+
+```bash
+scripts/build_all.sh
+```
+
+```powershell
+pwsh -ExecutionPolicy Bypass -File scripts/build_all.ps1
+```
+
+Provide additional CMake options via trailing arguments in Bash or the `-ConfigureArgs` parameter in
+PowerShell.
 
 ## Releases
 
