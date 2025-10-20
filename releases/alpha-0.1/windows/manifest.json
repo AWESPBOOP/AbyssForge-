@@ -1,0 +1,16 @@
+{
+  "name": "Abyssforge Alpha 0.1",
+  "platform": "windows-x64",
+  "version": "0.1.0",
+  "build": "release",
+  "artifact": "Abyssforge-Alpha-0.1-Windows.zip",
+  "artifact_hosting": "external",
+  "sha256": "97c02df67d5a178e52c6033f2e1f0e9709d9e2a75288cf295b2de05e5bd97cdf",
+  "created": "2024-01-01T00:00:00Z",
+  "notes": [
+    "First playable alpha CLI showcase",
+    "Includes deterministic planet generation and destruction plugin sample",
+    "Requires Windows 10 or newer",
+    "Binary archive hosted externally; regenerate locally via BUILD_FROM_SOURCE instructions if needed"
+  ]
+}

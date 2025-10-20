@@ -1,0 +1,10 @@
+/build/
+/.cache/
+/.vscode/
+/*.tar.gz
+benchmarks/output/
+*.user
+*.log
+*.sln
+.DS_Store
+Thumbs.db
