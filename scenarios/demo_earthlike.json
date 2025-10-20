@@ -1,0 +1,28 @@
+{
+  "name": "Earthlike Demo",
+  "seed": 12345,
+  "star": {
+    "type": "G2V",
+    "luminosity_solar": 1.0,
+    "age_gyr": 4.5
+  },
+  "planet_overrides": {
+    "radius_km": 6371,
+    "mass_kg": 5.972e24,
+    "axial_tilt_deg": 23.4,
+    "water_fraction": 0.71,
+    "biosphere": true
+  },
+  "events": [
+    {
+      "type": "impact",
+      "body": "asteroid",
+      "diameter_km": 10,
+      "velocity_kms": 20,
+      "latitude_deg": 30,
+      "longitude_deg": -45,
+      "angle_deg": 45,
+      "composition": "Fe"
+    }
+  ]
+}
