@@ -72,6 +72,26 @@ Run the sample benchmark harness:
 python benchmarks/run_microbench.py
 ```
 
+## Build helpers
+
+To compile the project with the default release configuration without fetching any additional
+dependencies, run the lightweight helper script:
+
+```bash
+scripts/auto_compile.sh
+```
+
+Pass `--build-type <Config>` (defaults to `Release`) to switch configurations and/or `--build-dir
+<path>` to emit artifacts somewhere other than the default `build/` directory.
+
+## Releases
+
+Prebuilt binaries are not stored in the repository to keep the history lightweight. To reproduce
+the Windows Alpha 0.1 package locally, follow the step-by-step instructions in
+`releases/alpha-0.1/windows/BUILD_FROM_SOURCE.md`. Once generated, host the resulting
+`Abyssforge-Alpha-0.1-Windows.zip` archive on your preferred distribution platform (e.g., GitHub
+Releases) and reference the accompanying `manifest.json` metadata for checksums and release notes.
+
 ## Documentation
 
 - [User Manual](docs/user_manual.md)
